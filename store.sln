@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30330.147
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "domain", "domain", "{D54566E9-B31E-4F13-81AF-20C2574DA8A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "store", "domain\store\store.csproj", "{5CC37C18-F9A0-4135-A12B-847F63A3D57A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "store", "domain\store\store.csproj", "{5CC37C18-F9A0-4135-A12B-847F63A3D57A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{F238FEDA-6247-4616-8285-F202FB8414F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreMemory", "infrastructure\StoreMemory\StoreMemory.csproj", "{EA141BF8-BB96-467F-9D5D-95939179A4EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{5CC37C18-F9A0-4135-A12B-847F63A3D57A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -32,8 +33,27 @@ Global
 		{5CC37C18-F9A0-4135-A12B-847F63A3D57A}.Release|x64.Build.0 = Release|Any CPU
 		{5CC37C18-F9A0-4135-A12B-847F63A3D57A}.Release|x86.ActiveCfg = Release|Any CPU
 		{5CC37C18-F9A0-4135-A12B-847F63A3D57A}.Release|x86.Build.0 = Release|Any CPU
+		{EA141BF8-BB96-467F-9D5D-95939179A4EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA141BF8-BB96-467F-9D5D-95939179A4EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA141BF8-BB96-467F-9D5D-95939179A4EE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EA141BF8-BB96-467F-9D5D-95939179A4EE}.Debug|x64.Build.0 = Debug|Any CPU
+		{EA141BF8-BB96-467F-9D5D-95939179A4EE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EA141BF8-BB96-467F-9D5D-95939179A4EE}.Debug|x86.Build.0 = Debug|Any CPU
+		{EA141BF8-BB96-467F-9D5D-95939179A4EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA141BF8-BB96-467F-9D5D-95939179A4EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA141BF8-BB96-467F-9D5D-95939179A4EE}.Release|x64.ActiveCfg = Release|Any CPU
+		{EA141BF8-BB96-467F-9D5D-95939179A4EE}.Release|x64.Build.0 = Release|Any CPU
+		{EA141BF8-BB96-467F-9D5D-95939179A4EE}.Release|x86.ActiveCfg = Release|Any CPU
+		{EA141BF8-BB96-467F-9D5D-95939179A4EE}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5CC37C18-F9A0-4135-A12B-847F63A3D57A} = {D54566E9-B31E-4F13-81AF-20C2574DA8A9}
+		{EA141BF8-BB96-467F-9D5D-95939179A4EE} = {F238FEDA-6247-4616-8285-F202FB8414F7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12F5B7C8-E15A-4903-B56F-071B94C8CCC5}
 	EndGlobalSection
 EndGlobal
