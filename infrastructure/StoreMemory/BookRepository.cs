@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Store.Memory
@@ -34,6 +35,14 @@ namespace Store.Memory
                 "Montag begins to question everything he has ever known. He starts hiding books in his home, " +
                 "and when his pilfering is discovered, the fireman has to run for his life.",9.45m),
         };
+
+        public Book[] GetAllByIds(IEnumerable<int> bookIds)
+        {
+            var foundBooks = from book in books
+                             join bookId in bookIds on book.Id equals bookId
+                             select book;
+            return foundBooks.ToArray();
+        }
 
         public Book[] GetAllByIsbn(string isbn)
         {
