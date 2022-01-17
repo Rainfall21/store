@@ -2,7 +2,7 @@
 
 namespace Store.Contractors
 {
-    public interface IDeliveryService
+    public interface IPaymentService
     {
         string UniqueCode { get; }
         string Title { get; }
@@ -10,6 +10,6 @@ namespace Store.Contractors
 
         Form CreateForm(Order order);
         Form MoveNextForm(int orderId, int step, IReadOnlyDictionary<string, string> values);
-        OrderDelivery GetDelivery(Form form);
+        OrderPayment GetPayment(Form form);
     }
 }
