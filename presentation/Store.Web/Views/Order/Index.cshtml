@@ -41,11 +41,14 @@
         </tr>
     </tfoot>
 </table>
-<form action="@Url.Action("SendConfirmationCode")" method="post">
-    <input type="hidden" name="id" value="@Model.Id" />
+<p>
+    To complete the order you have to confirm your cell phone number.
+    Insert your cell phone number and press <em>send code</em>. Confirmation code will be sent to this number.
+</p>
+<form action="@Url.Action(nameof(OrderController.SendConfirmation))" method="post">
     <div class="form-group">
         <label for="cellPhone">Cell Phone</label>
-        <input type="text" class="form-control" name="cellPhone" value="+79876543210" />
+        <input type="text" class="form-control" name="cellPhone" placeholder="+79876543210" value="+79876543210" />
         @if (Model.Errors.ContainsKey("cellPhone"))
         {
             <small class="form-text text-danger">@Model.Errors["cellPhone"]</small>
