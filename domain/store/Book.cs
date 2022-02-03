@@ -87,7 +87,7 @@ namespace Store
                     Title = title.Trim(),
                     Description = description?.Trim(),
                     Price = price,
-                }
+                };
             }
         }
 
