@@ -16,3 +16,5 @@ Some NuGet packages were used such as:
 5. Newtonsoft.Json
 6. libphonenumber -csharp
 7. Microsoft.AspNetCore.Http.Extensions
+
+[You can watch a video to know how it works.](https://youtu.be/beQhNmsxQnU)
